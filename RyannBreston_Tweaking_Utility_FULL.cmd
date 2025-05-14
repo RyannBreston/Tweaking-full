@@ -1,5 +1,5 @@
 @echo off
-:: RyannBreston Tweaking Utility - V1.0
+:: RyannBreston Tweaking-full - V1.0
 :: GitHub: https://github.com/RyannBreston
 :: Sistema de otimização para Windows
 
@@ -32,7 +32,7 @@ cls
 echo.
 echo. ╔════════════════════════════════════════════════════╗
 echo. ║                                                    ║
-echo  ║  %w% Running Tweaking-full Utility as Administrator...%b% ║
+echo  ║  %w% Running Tweaking-full as Administrator...%b% ║
 echo. ║                                                    ║
 echo. ╚════════════════════════════════════════════════════╝
 timeout /t 1 /nobreak > NUL
@@ -44,7 +44,7 @@ if !errorlevel! equ 0 exit /b
 
 
 echo.
-echo             Exm is not running as Admin!
+echo             Tweaking-full is not running as Admin!
 echo     Some optimizations won't work. Continue anyway?
 echo.
 choice /c:"CQ" /n /m "%BS%               [C] Continue  [Q] Quit" & if !errorlevel! equ 2 exit /b
@@ -217,9 +217,9 @@ echo.       %p% ███████╗██╔╝╚██╗██║░╚�
 echo.       %p% ╚══════╝╚═╝░░╚═╝╚═╝░░░░░╚═╝░╚═╝░░░░░╚═╝░░╚═╝╚══════╝╚══════╝░░╚═════╝░░░░╚═╝░░░╚═╝╚══════╝╚═╝░░░╚═╝░░░░░░╚═╝░░░░░░░░░░╚═╝╚═╝░╚════╝░
 echo.       %b%"════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════"
 echo.       %w%                                                                                                         
-echo.       %w%                           %p%%w%%p%%w%                                  %p%[%w%0%p%]%w% Tutorial 
+echo.       %w%                           %p%%w%%p%%w%                                   
 echo.       %w%                                                                                                                                                      
-echo.       %w%                           %p%[%w%1%p%]%w% Ajustes gerais                %p%[%w%2%p%]%w% Mouse and Keyboard       %p%[%w%3%p%]%w% Windows Tweaks                      
+echo.       %w%                           %p%[%w%1%p%]%w% Ajustes gerais               %p%[%w%2%p%]%w% Mouse e teclado      %p%[%w%3%p%]%w% Windows Tweaks                      
 echo.       %w%                                                                                                                    
 echo.       %w%                           %p%[%w%4%p%]%w% PC limpo                      %p%[%w%5%p%]%w% Memory Tweaks            %p%[%w%6%p%]%w% Disable Startup Services
 echo.       %w%                                                                                                                  
@@ -239,17 +239,16 @@ echo.       %b%"═════════════════════�
 
 
 set /p input=:
-if /i %input% == 0 start https://youtu.be/FDU2knFQTXo
 if /i %input% == 1 goto 1
 if /i %input% == 2 goto 2
-if /i %input% == 3 goto 3Ajustes de GPU
+if /i %input% == 3 goto 3 Ajustes de GPU
 if /i %input% == 4 goto 4
 if /i %input% == 5 goto 5
 if /i %input% == 6 goto 6
 if /i %input% == 7 goto 7
-if /i %input% == 8 goto 8war
+if /i %input% == 8 goto 8 war
 if /i %input% == 9 goto 9
-if /i %input% == 10 goto 10war
+if /i %input% == 10 goto 10 war
 if /i %input% == 11 goto 11
 if /i %input% == 12 goto 12
 
